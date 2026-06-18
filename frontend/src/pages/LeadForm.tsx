@@ -43,7 +43,7 @@ const LeadForm = () => {
        setServerError("");
 
        try {
-           const res = await fetch("https://lead-capture-agent.onrender.com", {
+           const res = await fetch("https://lead-capture-agent.onrender.com/leads", {
                method: "POST",
                headers: { "Content-Type": "application/json" },
                body: JSON.stringify(formData),
