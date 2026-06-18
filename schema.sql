@@ -1,0 +1,14 @@
+-- MongoDB equivalent schema (for reference)
+-- Collection: leads
+-- {
+--   _id: ObjectId,
+--   fullName: String (required),
+--   email: String (required, lowercase),
+--   businessName: String (required),
+--   message: String (required),
+--   aiScore: String (enum: Hot, Warm, Cold),
+--   aiReason: String,
+--   emailDraft: String,
+--   createdAt: Date,
+--   updatedAt: Date
+-- }
