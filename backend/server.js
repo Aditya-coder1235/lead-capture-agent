@@ -7,7 +7,11 @@ const leadRoutes = require("./routes/leads");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: ["https://lead-capture-agent.vercel.app"],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+}));
 app.use(express.json());
 
 mongoose
