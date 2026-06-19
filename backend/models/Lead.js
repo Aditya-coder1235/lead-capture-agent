@@ -26,7 +26,7 @@ const leadSchema = new mongoose.Schema(
         },
         aiScore: {
             type: String,
-            enum: ["Hot", "Warm", "Cold"],
+            enum: ["Hot", "Warm", "Cold",null],
             default: null,
         },
         aiReason: {
