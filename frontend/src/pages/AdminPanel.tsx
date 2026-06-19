@@ -27,7 +27,7 @@ const AdminPanel = () => {
         const fetchLeads = async () => {
             try {
                 const res = await fetch(
-                    "https://lead-capture-agent.onrender.com/leads",
+                    "https://lead-capture-agent.onrender.com/admin",
                 );
                 const data = await res.json();
                 setLeads(data);
